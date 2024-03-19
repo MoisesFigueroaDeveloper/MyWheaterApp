@@ -6,28 +6,26 @@ const FETCH_OPTIONS = {
 	}
 };
 
-export async function getWeatherFrom (query = 'Santiago'){
-    const response = await fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=${query}', options)
-    const data = await response.json()
+export async function getWeatherFrom(query = 'Santiago') {
+    const response = await fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${query}`, FETCH_OPTIONS);
+    const data = await response.json();
 
-    const {location, current} = data
-    const {country, localtime, name} = location
-    const {condition, humidity, feelslike_c, temp_c, is_day, wind_kph, wind_dir} = current
-    const {code, text} = condition
+    const { location, current } = data;
+    const { country, localtime, name } = location;
+    const { condition, humidity, feelslike_c, temp_c, is_day, wind_kph, wind_dir } = current;
+    const { code, text } = condition;
 
-    return{
+    return {
         conditionsCode: code,
         conditionsText: text,
         country,
         localtime,
         name,
         humidity,
-        isDay : is_day,
+        isDay: is_day,
         feelsLike: feelslike_c,
         temperature: temp_c,
         windKph: wind_kph,
         windDir: wind_dir
-    }
-
+    };
 }
-
