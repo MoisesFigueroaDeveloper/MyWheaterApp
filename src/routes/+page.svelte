@@ -1,3 +1,4 @@
+
 <script>
     import { getWeatherFrom } from '../services/weather.js';
     const weatherPromise = getWeatherFrom();
