@@ -1,6 +1,6 @@
 # Description
 
-"My Weather App is an application built in SvelteKit to test its features and learn about this framework. Additionally, it aims to gain more knowledge about API functionality."
+"My Weather App is an application built in SvelteKit to test its features and learn about this framework. Additionally, it aims to gain more knowledge about API functionality".
 
 # installation
 

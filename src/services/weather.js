@@ -20,7 +20,7 @@ export async function getWeatherFrom(query = 'Santiago') {
         conditionsText: text,
         country,
         localtime,
-        name,
+        locationName: name,
         humidity,
         isDay: is_day,
         feelsLike: feelslike_c,
