@@ -4,15 +4,8 @@
 
 # installation
 
-```zsh or bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
 ```
-
-```zsh or bash
+# zsh or bash
 npm run dev
 
 # or start the server and open the app in a new browser tab
@@ -23,6 +16,6 @@ npm run dev -- --open
 
 To create a production version of your app:
 
-```bash
+```zsh or bash
 npm run build
 ```
