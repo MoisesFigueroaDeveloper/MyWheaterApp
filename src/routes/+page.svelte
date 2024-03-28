@@ -1,7 +1,7 @@
-
-
 <script>
     import { getWeatherFrom } from '../services/weather.js';
+    import additionalInfo from '../components/additionals-info.svelte';
+	import AdditionalsInfo from '../components/additionals-info.svelte';
     const weatherPromise = getWeatherFrom();
 </script>
 
@@ -9,10 +9,11 @@
     <section>
         <h1>{weather.locationName}</h1>
         <h2>{weather.temperature}°</h2>
-        <h3>{weather.humidity}%</h3>
+        <h3>Humidity {weather.humidity}%</h3>
         <h4>{weather.country}</h4>
         <h5>{weather.conditionsText}</h5>
     </section>
+    <AdditionalsInfo />
 {/await}
 
 <style>
